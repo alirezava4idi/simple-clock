@@ -5,7 +5,6 @@ let hour = document.querySelector('.hour');
 let min = document.querySelector('.min');
 let sec = document.querySelector('.sec');
 
-
 function clock() {
     const today = new Date();
     let h = today.getHours();
@@ -13,7 +12,6 @@ function clock() {
     let s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    // document.querySelector('.clock').innerHTML = h + ":" + m + ":" + s;
     hour.innerHTML = h;
     min.innerHTML = m;
     sec.innerHTML = s;

@@ -11,7 +11,9 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     font-family: 'Barlow', sans-serif;
     font-family: 'Fraunces', serif;
@@ -19,21 +21,22 @@ body {
     background-color: var(--Gunmetal);
     color: var(--Ash-Gray);
     justify-content: center;
+    box-sizing: border-box;
+    
 }
 
 .clock {
     display: flex;
     flex-direction: row;
-    row-gap: 1rem;
+    
 }
 
 .clock > div {
     padding: 1.5rem;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bolder;
 }
 
 .sec {
     color: var(--Cinnabar);
-    mask: inherit;
 }
